@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Collin's Database</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+
+<body>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="modifications.html">Modifications</a></li>
+<li><a href="queries.html">Queries</a></li>
+<li><a href="datawarehouse.php">Data WareHouse</a></li>
+</ul>
+<br>
+<hr>
+
+<h1>Collin's Database Modifcations</h1>
+<hr>
+<?php
+// Connection parameters 
+$host = 'mpcs53001.cs.uchicago.edu';
+$username = 'collinol';
+$password = '1019Mysq!';
+$database = $username.'DB';
+
+// Attempting to connect
+$dbcon = mysqli_connect($host, $username, $password, $database)
+   or die('Could not connect: ' . mysqli_connect_error());
+?>
+
+Add a new player to the database. <br>
+<p>
+
+<form method="post" action="New_Player.php">
+<b>Enter new player:</b><br>
+Player Name <input type="text" name="user"><BR>
+Country <input type = "number" name="country"><BR>
+<input type="submit" value="Submit">
+</form>
+<br>
+** For a list of country codes, see here: <a href= "country_codes.php">Country Codes</a>
+<hr>
+
+
+Add a new Game Type <br>
+See: <a href = "game_type_samples.php">Game Type Samples</a> for an idea of how to format them
+<p>
+
+<form method="post" action="New_Gametype.php">
+Game ID <input type="text" name="id"><BR>
+Name <input type = "text" name="name"><BR>
+Game Notation <input type = "text" name="name2"><BR>
+
+<input type="submit" value="Submit">
+</form>
+<br>
+<hr>
+
+
+
+Add a new Country to the Database <br>
+<p>
+
+<form method="post" action="New_Nation.php">
+Enter New Country (3 letter Code like; USA, NOR, RUS, etc)<BR> 
+<input type="text" name="name_abbrev"><BR>
+Enter Population (in millions) <BR>
+<input type = "number" name="pop"><BR>
+<input type="submit" value="Submit">
+</form>
+<br>
+<hr>
+
+
+
+
+Edit a Player's rating <br>
+for all current ratings, see here <a href="current_ratings.php">Current Ratings</a> 
+<p>Select Year</p>
+
+<form method = "post" action="update_rating.php">
+  <select name="year">
+    <option value="2007">2007</option>
+    <option value="2008">2008</option>
+    <option value="2009">2009</option>
+    <option value="2010">2010</option>
+    <option value="2011">2011</option>
+    <option value="2012">2012</option>
+    <option value="2013">2013</option>
+    <option value="2014">2014</option>
+    <option value="2015">2015</option>
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+
+  </select>
+	<br>
+<p> Enter Player Name </p>
+<input type= "text" name = "name"><BR>
+<p> Enter New rating </p>
+<input type = "number" name = "rating"><BR>
+  <input type="submit">
+
+</form>
+<hr>
+
+
+Add a new Tournament. See <a href="all_tournaments.php">Tournament List</a> <br>
+<form method="post" action="New_Tournament.php">
+<br>Name:<br>
+<input type="text" name="name"><BR>
+<input type="submit" value="Submit">
+</form>
+<br>
+<hr>
+
+
+<p>Remove Nation from database:</p>
+<form method = "post" action="remove_nation.php">
+  <select name="country">
+	<option value="NOR">NOR</option>
+    <option value="USA">USA</option>
+    <option value="RUS">RUS</option>
+    <option value="ARM">ARM</option>
+    <option value="AZE">AZE</option>
+    <option value="FRA">FRA</option>
+    <option value="IND">IND</option>
+    <option value="CHN">CHN</option>
+    <option value="NED">NED</option>
+    <option value="POL">POL</option>
+    <option value="VIE">VIE</option>
+    <option value="ENG">ENG</option>
+    <option value="CZE">CZE</option>
+    <option value="UKR">UKR</option>
+    <option value="ISR">ISR</option>
+    <option value="ESP">ESP</option>
+    <option value="BUL">BUL</option>
+    <option value="GER">GER</option>
+    <option value="GEO">GEO</option>
+    <option value="EGY">EGY</option>
+    <option value="HUN">HUN</option>
+    <option value="ARG">ARG</option>
+    <option value="PAR">PAR</option>
+    <option value="SLO">SLO</option>
+    <option value="BLR">BLR</option>
+    <option value="CUB">CUB</option>
+    <option value="PER">PER</option>
+    <option value="CAN">CAN</option>
+    <option value="LAT">LAT</option>
+    <option value="GRE">GRE</option>
+    <option value="BRA">BRA</option>
+    <option value="EST">EST</option>
+    <option value="KAZ">KAZ</option>
+    <option value="PHI">PHI</option>
+    <option value="ISL">ISL</option>
+    <option value="MGL">MGL</option>
+    <option value="FRO">FRO</option>
+    <option value="IRI">IRI</option>
+    <option value="UZB">UZB</option>
+    <option value="CRO">CRO</option>
+    <option value="AUS">AUS</option>
+    <option value="ALG">ALG</option>
+    <option value="MAS">MAS</option>
+    <option value="TJK">TJK</option>
+    <option value="BAN">BAN</option>
+    <option value="RSA">RSA</option>
+    <option value="COl">COl</option>
+    <option value="NGR">NGR</option>
+
+  </select>
+  <br><br>
+ <input type="submit">
+
+</form>
+<hr>
+
+
+<p> Run one of the stored procedures:</p>
+<b>Population Relativity: </b>Modifies the database to create a view of each nation and it's population as a percent,<br> relative to the total population of all nations involved <br>
+<b>Get Players: </b>Returns all Players<br>
+<b>Show Views: </b>Show all existing views in the database
+
+<form method = "post" action="procedure_select.php">
+  <select name="procedure">
+        <option value="Population Relativity">Population Relativity</option>
+	<option value="Get Players">Get Players</option>
+	<option value="Show Views">Show Views</option>
+
+  </select><br><br>
+  <input type ="submit">
+	</form>
+<br><hr>
+
+<p>Delete Views</p>
+use the "Show Views" option above to see which views exist <br>
+<form method="post" action="remove_view.php">
+<br>Enter the name of the view you wish to drop:<br>
+<input type="text" name="view"><BR>
+<br>
+<input type="submit" value="Submit">
+</form>
+<br>
+<hr>
+
+
+
+
+</body>
+</html>
+
+

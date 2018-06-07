@@ -1,0 +1,8 @@
+1,World Cup
+2,European Individual Championship
+3,American Continental Championship
+4,Asian Chess Championship
+5,African Chess Championship
+6,USA Championship
+7,The Uchicago Championship
+8,The ESPN 8 The Ocho Championship

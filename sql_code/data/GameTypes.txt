@@ -1,0 +1,66 @@
+A00|Polish (Sokolsky) opening|1. b4
+A01|Nimzovich-Larsen attack|1. b3
+A02-A03|Bird's opening|1. f4
+A04-A09|Reti opening|1. Nf3
+A10-A39|English opening|1. c4
+A40-A41|Queen's pawn|1. d4
+A42|Modern defence, Averbakh system|1. d4 d6 2. c4 g6 3. Nc3 Bg7 4. e4
+A43-A44|Old Benoni defence|1. d4 c5
+A45-A46|Queen's pawn game|1. d4 Nf6
+A47|Queen's Indian defence|1. d4 Nf6 2. Nf3 b6
+A48-A49|King's Indian, East Indian defence|1. d4 Nf6 2. Nf3 g6
+A50|Queen's pawn game|1. d4 Nf6 2. c4
+A51-A52|Budapest defence|1. d4 Nf6 2. c4 e5
+A53-A55|Old Indian defence|1. d4 Nf6 2. c4 d6
+A56|Benoni defence|1. d4 Nf6 2. c4 c5
+A57-A59|Benko gambit|1. d4 Nf6 2. c4 c5 3. d5 b5
+A60-A79|Benoni defence|1. d4 Nf6 2. c4 c5 3. d5 e6
+A80-A99|Dutch|1. d4 f5
+B00|King's pawn opening|1. e4
+B01|Scandinavian (centre counter) defence|1. e4 d5
+B02-B05|Alekhine's defence|1. e4 Nf6
+B06|Robatsch (modern) defence|1. e4 g6
+B07-B09|Pirc defence|1. e4 d6 2. d4 Nf6 3. Nc3
+B10-B19|Caro-Kann defence|1. e4 c6
+B20-B99|Sicilian defence|1. e4 c5
+C00-C19|French defence|1. e4 e6
+C20|King's pawn game|1. e4 e5
+C21-C22|Centre game|1. e4 e5 2. d4 exd4
+C23-C24|Bishop's opening|1. e4 e5 2. Bc4
+C25-C29|Vienna game|1. e4 e5 2. Nc3
+C30-C39|King's gambit|1. e4 e5 2. f4
+C40|King's knight opening|1. e4 e5 2. Nf3
+C41|Philidor's defence|1. e4 e5 2. Nf3 d6
+C42-C43|Petrov's defence|1. e4 e5 2. Nf3 Nf6
+C44|King's pawn game|1. e4 e5 2. Nf3 Nc6
+C45|Scotch game|1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4
+C46|Three knights game|1. e4 e5 2. Nf3 Nc6 3. Nc3
+C47-C49|Four knights, Scotch variation|1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4
+C50|King's pawn game|1. e4 e5 2. Nf3 Nc6 3. Bc4
+C51-C52|Evans gambit|1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4
+C53-C54|Giuoco Piano|1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3
+C55-C59|Two knights defence|1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6
+C60-C99|Ruy Lopez (Spanish opening)|1. e4 e5 2. Nf3 Nc6 3. Bb5
+D00|Queen's pawn game|1. d4 d5
+D01|Richter-Veresov attack|1. d4 d5 2. Nc3 Nf6 3. Bg5
+D02|Queen's pawn game|1. d4 d5 2. Nf3
+D03|Torre attack (Tartakower variation)|1. d4 d5 2. Nf3 Nf6 3. Bg5
+D04-D05|Queen's pawn game|1. d4 d5 2. Nf3 Nf6 3. e3
+D06|Queen's Gambit|1. d4 d5 2. c4
+D07-D09|Queen's Gambit Declined, Chigorin defence|1. d4 d5 2. c4 Nc6
+D10-D15|Queen's Gambit Declined Slav defence|1. d4 d5 2. c4 c6
+D16|Queen's Gambit Declined Slav accepted, Alapin variation|1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4
+D17-D19|Queen's Gambit Declined Slav, Czech defence|1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5
+D20-D29|Queen's gambit accepted|1. d4 d5 2. c4 dxc4
+D30-D42|Queen's gambit declined|1. d4 d5 2. c4 e6
+D43-D49|Queen's Gambit Declined semi-Slav|1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 c6
+D50-D69|Queen's Gambit Declined, 4.Bg5|1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5
+D70-D79|Neo-Gruenfeld defence|1. d4 Nf6 2. c4 g6 3. f3 d5
+D80-D99|Gruenfeld defence|1. d4 Nf6 2. c4 g6 3. Nc3 d5
+E00|Queen's pawn game|1. d4 Nf6 2. c4 e6
+E01-E09|Catalan, closed|1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2
+E10|Queen's pawn game|1. d4 Nf6 2. c4 e6 3. Nf3
+E11|Bogo-Indian defence|1. d4 Nf6 2. c4 e6 3. Nf3 Bb4+
+E12-E19|Queen's Indian defence|1. d4 Nf6 2. c4 e6 3. Nf3 b6
+E20-E59|Nimzo-Indian defence|1. d4 Nf6 2. c4 e6 3. Nc3 Bb4
+E60-E99|King's Indian defence|1. d4 Nf6 2. c4 g6

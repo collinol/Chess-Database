@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<?php
+// Connection parameters 
+$host = 'mpcs53001.cs.uchicago.edu';
+$username = 'collinol';
+$password = '1019Mysq!';
+$database = $username.'DB';
+
+// Attempting to connect
+$dbcon = mysqli_connect($host, $username, $password, $database)
+   or die('Could not connect: ' . mysqli_connect_error());
+?>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="modifications.html">Modifications</a></li>
+<li><a href="queries.html">Queries</a></li>
+<li><a href="datawarehouse.php">Data WareHouse</a></li>
+</ul>
+<br>
+<hr>
+
+<h1> Collin's Database Available Queries </h1>
+<hr>
+
+First, a link to a php script (<tt>list_tables.php</tt>) that list all tables in
+your database:
+<p>
+<a href="list_tables.php">List your tables!</a>
+<hr>
+Second, a form to get all attributes of a player given their name.  The script that runs when you press the <it>Submit</it> button is <tt>list_attrs.php<tt>.<br>
+Some examples of names to check:<br>
+Magnus Carlsen<br>
+James Lopez<br>
+Luis Cannon<br>
+Tina Lee <br>
+Mark Dodson<br>
+<p>
+
+<form method=get action="list_attrs.php">
+<b>Enter name:</b><br>
+<input type="text" name="user"><BR>
+<input type="submit" value="Submit">
+</form>
+<hr>
+
+
+
+Third, a form to list all games played with selected game type
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <div class="w3-dropdown-click">
+    <button onclick="myFunction()" class="w3-button w3-black">Select Game</button>
+    <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+      <a href="list_games_queen.php" class="w3-bar-item w3-button">Queen's Pawn</a>
+      <a href="list_games_english.php" class="w3-bar-item w3-button">English Game</a>
+      <a href="list_games_evans.php" class="w3-bar-item w3-button">Evans Gambit</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("Demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+<hr>
+
+Fourth, List all the winners of each tournament
+<br>
+<a href = "winners.php">Winners</a>
+<hr>
+Fifth, show the highest rated player, and their countries, for each year (show all if there are ties)
+<br>
+<a href = "nation_year.php">Select Ratings</a>
+<hr>
+Sixth, Show all the matches with an upset (a player defeating someone 500+ or more ranks above them)
+<br>
+<a href = "list_upsets.php">Upsets</a>
+<hr>
+
+
+Seventh, List all players in the database and their nationality
+<br>
+<a href = "player_nation.php">Players</a>
+<hr>
+Eigth List all Nations and the number of players that they hold in the database
+<br>
+<a href = "nation_count.php">Nations</a>
+<hr>
+Ninth, list all player's who have won more than n games
+<br>
+<form method=get action="list_wins.php">
+<b>Enter minimum number of wins:</b><br>
+<input type="number" name="user"><BR>
+<input type="submit" value="Submit">
+</form>
+<hr>
+
+Tenth, display the year, name and rating of any player who's rating is above
+<br>
+min: 300, max 3000 <br>
+<form method=get action="rating_cap.php">
+<b>Enter minimum rating:</b><br>
+<input type="number" name="user"><BR>
+<input type="submit" value="Submit">
+</form>
+<hr>
+
+
+Eleventh, Display all games from year<br>
+<form method=get action="games_in_year.php">
+<b>Enter Last two digits of year:</b><br>
+<input type="text" name="user"><BR>
+<input type="submit" value="Submit">
+</form>
+<hr>
+
+
+
+
+
+
+
+</body>
+</html>
+
+

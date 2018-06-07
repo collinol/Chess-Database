@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Collin's Database</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<h1>Collin's Database Interface</h1>
+<?php
+// Connection parameters 
+$host = 'mpcs53001.cs.uchicago.edu';
+$username = 'collinol';
+$password = '1019Mysq!';
+$database = $username.'DB';
+
+// Attempting to connect
+$dbcon = mysqli_connect($host, $username, $password, $database)
+   or die('Could not connect: ' . mysqli_connect_error());
+?>
+
+
+
+<h2>ERD for Chess Tournament Database </h2>
+<img src = "erd.png">
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="modifications.html">Modifications</a></li>
+<li><a href="queries.html">Queries</a></li>
+<li><a href="datawarehouse.php">Data WareHouse</a></li>
+</ul>
+<br>
+<hr>
+
+
+
+
+</body>
+</html>
+
+
